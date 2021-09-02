@@ -1,0 +1,1 @@
+Some technical modules from Odoo can give you the options for automating certain processes under special circumstances, however, if the only thing that you need is decide different email templates and in which cases you want them to be sent at Sales Order confirmation or Invoice validation, this module makes it really easy to start.

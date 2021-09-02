@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Add a `brand_partner` checkbox, and if the partner is a customer,
+    add a table to display `restricted_product_ids` too -->
+    <record id="private_product_partner_form" model="ir.ui.view" >
+        <field name="name">private.product.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="priority" eval="20" />
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='sales_purchases']/group/group/field[@name='customer']" position="after">
+                <field name="brand_partner" />
+            </xpath>
+            <group name="sale" position="inside">
+                <label for="restricted_product_ids"  attrs="{'invisible': ['|', ('customer', '=', False), ('parent_id', '!=', False)]}"/>
+                <div colspan="2">
+                    <div class="o_row" style="width: 100% !important">
+                        <field name="restricted_product_ids" nolabel="1" style="width: 100% !important" class="oe_inline" attrs="{'invisible': ['|', ('customer', '=', False), ('parent_id', '!=', False)]}">
+                            <tree limit="10">
+                                <field name="name" />
+                                <field name="default_code" />
+                            </tree>
+                        </field>
+                    </div>
+                </div>
+            </group>
+        </field>
+    </record>
+
+</odoo>

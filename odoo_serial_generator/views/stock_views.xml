@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Add `display_assign_serial`, `next_serial`, and `next_serial_count` to the detailed operations form -->
+    <record id="view_stock_move_operations_serials" model="ir.ui.view">
+        <field name="name">stock.move.operations.form.serials</field>
+        <field name="model">stock.move</field>
+        <field name="inherit_id" ref="stock.view_stock_move_operations" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('o_row')]" position="after">
+                <field name="display_assign_serial" invisible="1" />
+                <field name="next_serial"
+                       attrs="{'invisible': [('display_assign_serial', '=', False)]}"/>
+                <label for="next_serial_count" attrs="{'invisible': [('display_assign_serial', '=', False)]}"/>
+                <div class="o_row" attrs="{'invisible': [('display_assign_serial', '=', False)]}">
+                    <span><field name="next_serial_count"/></span>
+                    <button name="action_assign_serial_show_details" type="object"
+                            class="btn-link"
+                            title="Assign Serial Numbers">
+                        Assign Serial Numbers
+                    </button>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- If `show_operations` is disabled, add a button to the lines inside the operations page, which will open `view_assign_serial_numbers` wizard -->
+    <record id="view_picking_form_serials" model="ir.ui.view">
+        <field name="name">stock.picking.form.serials</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <button name="action_show_details" position="after">
+                <field name="display_assign_serial" invisible="1" />
+                <button name="action_assign_serial" type="object"
+                        icon="fa-plus-square"
+                        role="img"
+                        title="Assign Serial Numbers"
+                        attrs="{'invisible': ['|', ('display_assign_serial', '=', False), ('show_operations', '=', False)]}"/>
+            </button>
+        </field>
+    </record>
+
+</odoo>

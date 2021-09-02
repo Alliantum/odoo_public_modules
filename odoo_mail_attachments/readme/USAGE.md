@@ -1,0 +1,1 @@
+Once everything is configured, the only thing you need to do is go ahead to one of the objects that allow sending emails, and try sending one of them, for one record that matched your rules criteria. Then in the chatter, you should find the attachments that applies in that case.
