@@ -1,0 +1,121 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_no_fractions
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-31 12:05+0000\n"
+"PO-Revision-Date: 2022-03-31 13:09+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: odoo_no_fractions
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_uom_category__avoid_sell_fractions
+msgid "Avoid Sell Fractions"
+msgstr "Vermeiden Sie den Verkauf von Fraktionen"
+
+#. module: odoo_no_fractions
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_uom_category__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: odoo_no_fractions
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_account_move_line__id
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_sale_order_line__id
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_uom_category__id
+msgid "ID"
+msgstr ""
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/account_line.py:0
+#: code:addons/odoo_no_fractions/models/sale_order_line.py:0
+#, python-format
+msgid "Invalid Product Quantity"
+msgstr "Ungültige Produktmenge"
+
+#. module: odoo_no_fractions
+#: model:ir.model,name:odoo_no_fractions.model_account_move_line
+msgid "Journal Item"
+msgstr "Buchungszeile"
+
+#. module: odoo_no_fractions
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_uom_category____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: odoo_no_fractions
+#: model:ir.model,name:odoo_no_fractions.model_uom_category
+msgid "Product UoM Categories"
+msgstr "Kategorien für Maßeinheiten von Produkten"
+
+#. module: odoo_no_fractions
+#: model:ir.model,name:odoo_no_fractions.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Auftragsposition"
+
+#. module: odoo_no_fractions
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_account_move_line__uom_id
+msgid "Unit of Measure"
+msgstr "Maßeinheit"
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"You're trying to sell {} {} of the product {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Qty."
+msgstr ""
+"Sie versuchen, {} {} des Produkts {} zu verkaufen.\n"
+"Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Gleitkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale Bestellmenge ein."
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/account_line.py:0
+#, python-format
+msgid ""
+"You're trying to sell {} {} of the product {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Quantity."
+msgstr ""
+"Sie versuchen, {} {} des Produkts {} zu verkaufen.\n"
+"Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Gleitkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale bestellte Menge ein."
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/account_line.py:0
+#, python-format
+msgid ""
+"You're trying to sell {} {} of the product {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Quantity."
+msgstr ""
+"Sie versuchen, {} {} des Produkts {} zu verkaufen.\n"
+"Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Gleitkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale Menge ein."
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"You're trying to sell {} {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Qty."
+msgstr ""
+"Sie versuchen, {} {} zu verkaufen.\n"
+"Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Gleitkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale Bestellmenge ein."
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/account_line.py:0
+#, python-format
+msgid ""
+"You're trying to sell {} {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Quantity."
+msgstr ""
+"Sie versuchen, {} {} zu verkaufen.\n"
+"Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Gleitkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale bestellte Menge ein."

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_automatic_mailing_rule,access.automatic.mailing.rule,model_automatic_mailing_rule,,1,1,1,0
+access_system_automatic_mailing_rule,access.system.automatic.mailing.rule,model_automatic_mailing_rule,base.group_system,1,1,1,1
+access_manage_mailing_rules,access.manage.mailing.rules,model_manage_mailing_rules,,1,1,1,1

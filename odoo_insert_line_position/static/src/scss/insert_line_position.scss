@@ -1,0 +1,41 @@
+.all_insert_cell {
+	padding: 0 !important;
+	height: 0rem;
+	border: none !important;
+	color: white;
+	background-color: rgba($o-community-color, .5);;
+	font-size: 0rem;
+	visibility: visible;
+	text-align: left;
+	transition: height 0.5s, font-size 0.5s ease, height 0.5s ease-in-out, background-color 0.5s ease;
+}
+div.hideHandlers tr > td > span.o_row_handle {
+    display: none;
+    opacity: 0;
+}
+.all_insert_cell_icon {
+	margin-left: 0;
+	opacity: 0;
+	transition: margin-left 0.5s 0.5s linear, opacity 0.5s 0.5s;
+}
+
+.all_insert_cell_text {
+	margin-left: 1.2rem;
+	opacity: 0;
+	transition: opacity 0.5s 0.5s;
+}
+
+.all_insert_cell:hover {
+	height: 2rem;
+	font-size: 1.2rem;
+	background-color: $o-community-color;
+
+	.all_insert_cell_icon{
+		margin-left: 0.8rem;
+		opacity: 1;
+	}
+
+	.all_insert_cell_text{
+		opacity: 1;
+	}
+}

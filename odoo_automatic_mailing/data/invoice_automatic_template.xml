@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Here we create the template of the automatic email for invoices created -->
+    <data noupdate="1"> <!-- this  is important as if the module gets upgraded it would overwrite the edited template -->
+        <record id="automatic_email_template_edi_invoice" model="mail.template">
+            <field name="name">Invoice: Sent by email</field>
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="email_from">${object.company_id.name} &lt;invoice@${object.company_id.name}.com></field>
+            <field name="subject">${object.company_id.name} Invoice (Ref ${object.number or 'n/a'})</field>
+            <field name="body_html" type="html">
+            <div style="margin: 0px; padding: 0px;">
+                <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                    <p>Dear Customer</p>
+                    <p>
+                      Attached you can find the invoice of your current order.
+                    </p>
+                    <div>
+                      <p>Best regards.</p>
+                      <p>
+                        ${object.company_id.name}
+                      </p>
+                    </div>
+                </p>
+            </div>
+            </field>
+            <field name="report_template" ref="account.account_invoices"/>
+            <field name="report_name">Invoice_${(object.number or '').replace('/','_')}${object.state == 'draft' and '_draft' or ''}</field>
+            <field name="lang">${object.partner_invoice_id and object.partner_invoice_id.lang or object.partner_id.lang}</field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+
+    </data>
+</odoo>

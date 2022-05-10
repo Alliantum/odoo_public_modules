@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Here we create the template of the automatic email for sale orders confirmed -->
+    <data noupdate="1"> <!-- this  is important as if the module gets upgraded it would overwrite the edited template -->
+      
+        <record id="automatic_email_template_edi_sale" model="mail.template">
+            <field name="name">Sales Order: Sent by email</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="email_from">${object.company_id.name} &lt;order@${object.company_id.name}.com></field>
+            <field name="partner_to"></field>
+            <field name="subject">${object.company_id.name} ${object.state in ('draft', 'sent') and 'Quotation' or 'Order'} (Ref ${object.name or 'n/a' })</field>
+            <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px;">
+    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+        <p>Dear Customer</p>
+        <p>
+          Thank you very much for ordering with us!
+        </p>
+        <p>
+          Here you will find attached a copy of your current order.
+        </p>
+        <div>
+          <p>Best regards.</p>
+          <p>
+            ${object.company_id.name}
+          </p>
+        </div>
+    </p>
+</div>
+            </field>
+            <field name="report_template" ref="sale.action_report_saleorder"/>
+            <field name="report_name">${(object.name or '').replace('/','_')}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+
+    </data>
+</odoo>

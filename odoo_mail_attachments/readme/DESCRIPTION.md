@@ -1,0 +1,3 @@
+With this module you can start creating rules for objects like Sales Order, Invoices, Purchases or another, that will decide which pdf document will be attached to the emails sent from the context actions of that object. The power of this module is that those pdf Documents can be generated dynamically from related objects to the current one.
+
+The rules will allow you to define under which circumstances, depending on the fields of the current object you want the attachments to be generated, filter the related objects, attach static files based on rules, and attach static files based on languages.

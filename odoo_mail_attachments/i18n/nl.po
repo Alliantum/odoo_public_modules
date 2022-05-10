@@ -1,0 +1,356 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_mail_attachments
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-31 15:13+0000\n"
+"PO-Revision-Date: 2022-03-31 16:42+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.res_config_settings_view_form
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" aria-label=\"Values set here are company-specific.\" groups="
+"\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Waardes die hier ingesteld "
+"staan zijn bedrijfsspecifiek.\" aria-label=\"Waardes die hier ingesteld "
+"staan zijn bedrijfsspecifiek.\" groups=\"base.group_multi_company\" role="
+"\"img\"/>"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.manage_mail_attachemnt_view_form
+msgid ""
+"Add or remove here the attachemnt you want to have included in your mails."
+msgstr ""
+"Voeg hier de bijlage toe of verwijder deze die je in je nagels wilt hebben."
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.mail_attachment_line_view_form
+msgid ""
+"And this is for the report model. You can also <b>keep empty for apply in "
+"all ciscunstances</b>."
+msgstr ""
+"En dit is voor het rapportmodel. U kunt ook <b>leeg houden voor toepassen "
+"in alle gevallen</b>."
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__attachment_id
+msgid "Attachment"
+msgstr "Bijlage"
+
+#. module: odoo_mail_attachments
+#: model:ir.model,name:odoo_mail_attachments.model_attachment_language_line
+msgid "Attachment Language Line"
+msgstr "Taalregel bijlage"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__attachment_line_id
+msgid "Attachment Line"
+msgstr "Bevestigingslijn"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.res_config_settings_view_form
+msgid "Attachment Lines"
+msgstr "Bevestigingslijnen"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__attachment_ids
+msgid "Attachments"
+msgstr "Bijlagen"
+
+#. module: odoo_mail_attachments
+#: model:ir.model,name:odoo_mail_attachments.model_res_company
+msgid "Companies"
+msgstr "Bedrijven"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__company_id
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_manage_mail_attachments__company_id
+msgid "Company"
+msgstr "Bedrijf"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__create_uid
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__create_uid
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_manage_mail_attachments__create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__create_date
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__create_date
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_manage_mail_attachments__create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__display_name
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__display_name
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_compose_message__display_name
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_manage_mail_attachments__display_name
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_res_company__display_name
+msgid "Display Name"
+msgstr "Weergavenaam"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_manage_mail_attachments__mail_attachment_line_ids
+msgid "Dynamic Attachment Lines"
+msgstr "Dynamische bevestigingslijnen"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_res_company__mail_attachment_line_ids
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.res_config_settings_view_form
+msgid "Dynamic Mail Attachments"
+msgstr "Dynamische e-mailbijlagen"
+
+#. module: odoo_mail_attachments
+#: model:ir.model,name:odoo_mail_attachments.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "E-mail samenstellen wizard"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__existing_attachment_by_language_lines
+msgid "Existing Attachment By Language Lines"
+msgstr "Bestaande bijlage op taalregels"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__existing_attachment_ids
+msgid "Existing Attachments"
+msgstr "Bestaande bijlagen"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__use_existing_by_language
+msgid "Existing Attachments by Language"
+msgstr "Bestaande bijlagen op taal"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,help:odoo_mail_attachments.field_mail_attachment_line__filter_model_id
+msgid "Extended filtering option to trigger the line, for the Model."
+msgstr "Uitgebreide filteroptie om de lijn te activeren, voor het Model."
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__id
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__id
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_compose_message__id
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_manage_mail_attachments__id
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_res_company__id
+msgid "ID"
+msgstr ""
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__lang_id
+msgid "Lang"
+msgstr "Lang"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line____last_update
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line____last_update
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_compose_message____last_update
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_manage_mail_attachments____last_update
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_res_company____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__write_uid
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__write_uid
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_manage_mail_attachments__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__write_date
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__write_date
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_manage_mail_attachments__write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: odoo_mail_attachments
+#: model:ir.model,name:odoo_mail_attachments.model_mail_attachment_line
+msgid "Mail Attachemnt Line"
+msgstr "E-mailbijlageregel"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.res_config_settings_view_form
+msgid "Manage Attachment Rules"
+msgstr "Bijlageregels beheren"
+
+#. module: odoo_mail_attachments
+#: model:ir.actions.act_window,name:odoo_mail_attachments.action_manage_mail_attachent
+msgid "Manage Attachments"
+msgstr "Bijlagen beheren"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.manage_mail_attachemnt_view_form
+msgid "Manage Dynamic Mail Attachments"
+msgstr "Dynamische e-mailbijlagen beheren"
+
+#. module: odoo_mail_attachments
+#: model:ir.model,name:odoo_mail_attachments.model_manage_mail_attachments
+msgid "Manage Mail Attachments"
+msgstr "E-mailbijlagen beheren"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__model_name
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__report_model_name
+msgid "Model"
+msgstr "Model"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,help:odoo_mail_attachments.field_mail_attachment_line__model_id
+msgid ""
+"Model used by the email template. This will decide whether to use or not "
+"then current attachemnt line."
+msgstr ""
+"Model gebruikt door de e-mailsjabloon. Dit zal beslissen of de huidige "
+"bijlageregel al dan niet moet worden gebruikt."
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.mail_attachment_line_view_form
+msgid "Optional Filters"
+msgstr "Optionele filters"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__related_path
+msgid "Path to Report Model"
+msgstr "Pad naar rapportmodel"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__ref_field
+msgid "Reference Field"
+msgstr "Referentieveld"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__report_id
+msgid "Report"
+msgstr "Rapport"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.mail_attachment_line_view_form
+msgid "Report Model Filter"
+msgstr "Rapportmodelfilter"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__filter_report_id
+msgid "Report Model Filtering"
+msgstr "Rapportmodelfiltering"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.res_config_settings_view_form
+msgid "Select the attachemnts to be include with the mail composer.<br/>"
+msgstr ""
+"Selecteer de bijlagen die bij de e-mailopsteller moeten worden toegevoegd."
+"<br/>"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_attachment_language_line__sequence
+msgid "Sequence"
+msgstr "Volgorde"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__static_attachments_count
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.mail_attachment_line_view_form
+msgid "Static Attachments"
+msgstr "Statische bijlagen"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,help:odoo_mail_attachments.field_mail_attachment_line__report_id
+msgid "The report that will be used to generate the attachemnt."
+msgstr "Het rapport dat wordt gebruikt om de bijlage te genereren."
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.mail_attachment_line_view_form
+msgid ""
+"This filter will apply to the trigger model. <b>Keep empty to attach pdf in "
+"all cases</b>."
+msgstr ""
+"Dit filter is van toepassing op het triggermodel. <b>In alle gevallen leeg "
+"laten om pdf bij te voegen</b>."
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__model_id
+msgid "Trigger Model"
+msgstr "Triggermodel"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.mail_attachment_line_view_form
+msgid "Trigger Model Filter"
+msgstr "Triggermodelfilter"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,field_description:odoo_mail_attachments.field_mail_attachment_line__filter_model_id
+msgid "Trigger Model Filtering"
+msgstr "Triggermodelfiltering"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.manage_mail_attachemnt_view_form
+msgid "Trigger On"
+msgstr "Trigger aan"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.manage_mail_attachemnt_view_form
+msgid "Use Report"
+msgstr "Rapport gebruiken"
+
+#. module: odoo_mail_attachments
+#: model:ir.model.fields,help:odoo_mail_attachments.field_mail_attachment_line__related_path
+msgid ""
+"Using dot notation, you can specify here the path (starting from Model) to "
+"the records that will be used by the Report.\n"
+" For example:\n"
+"\n"
+" - Your rule applies to Sale Order, then if you want to attach the Delivery "
+"Slip to a Sale Order, you simply have to enter:\n"
+"    'picking_ids'\n"
+"\n"
+" - But, if your rule applies to Invoices too, you will need maybe something "
+"like:\n"
+"    'invoice_line_ids.sale_line_ids.order_id.picking_ids'"
+msgstr ""
+"Met behulp van puntnotatie kunt u hier het pad (vanaf Model) specificeren "
+"naar de records die door het Rapport worden gebruikt.\n"
+"  Bijvoorbeeld:\n"
+"\n"
+"  - Uw regel is van toepassing op een verkooporder. Als u de leveringsbon "
+"aan een verkooporder wilt toevoegen, hoeft u alleen maar het volgende in te "
+"voeren:\n"
+"     'picking_ids'\n"
+"\n"
+"  - Maar als uw regel ook van toepassing is op facturen, heeft u misschien "
+"iets nodig als:\n"
+"     'invoice_line_ids.sale_line_ids.order_id.picking_ids'"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.manage_mail_attachemnt_view_form
+msgid "When"
+msgstr "Wanneer"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.manage_mail_attachemnt_view_form
+msgid "When Report Records"
+msgstr "Wanneer rapportrecords"
+
+#. module: odoo_mail_attachments
+#: model_terms:ir.ui.view,arch_db:odoo_mail_attachments.mail_attachment_line_view_form
+msgid ""
+"When using this option, the language will be inferred from the <b>Trigger "
+"Model</b> when it contains the given <b>Reference Field</b> (most commonly "
+"will probably be <code>res_partner</code>) pointing to a <code>res.partner</"
+"code> related field."
+msgstr ""
+"Bij gebruik van deze optie wordt de taal afgeleid uit het <b>Trigger Model</"
+"b> wanneer het het gegeven <b>Referentieveld</b> bevat (meestal zal dit "
+"<code>res_partner</code> zijn) verwijzend naar een <code>res.partner</code> "
+"gerelateerd veld."

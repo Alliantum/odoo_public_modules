@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="uom_category_avoid_frac_tree" model="ir.ui.view">
+        <field name="name">uom.category.avoid.frac.tree</field>
+        <field name="model">uom.category</field>
+        <field name="inherit_id" ref="uom.product_uom_categ_tree_view" />
+        <field name="arch" type="xml">
+            <tree position="inside">
+                <field name="avoid_sell_fractions" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

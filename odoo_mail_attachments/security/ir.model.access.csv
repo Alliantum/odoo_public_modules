@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mail_attachment_line,access.mail.attachment.line,model_mail_attachment_line,,1,1,1,0
+access_system_mail_attachment_line,access.system.mail.attachment.line,model_mail_attachment_line,base.group_system,1,1,1,1
+access_attachment_language_line,access.attachemnt.language.line,model_attachment_language_line,,1,1,1,0
+access_system_attachment_language_line,access.system.attachemnt.language.line,model_attachment_language_line,base.group_system,1,1,1,1
+access_manage_mail_attachments_all,manage.mail.attachments.all,model_manage_mail_attachments,,1,1,1,1

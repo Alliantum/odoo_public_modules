@@ -1,0 +1,1 @@
+Maybe, some of your sellable products are just for one or some of your customers, and you'd like avoid selling them to any other company. This module helps with this efficiently and avoid making errors.
