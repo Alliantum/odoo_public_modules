@@ -64,7 +64,6 @@ class StockMove(models.Model):
                 move.has_tracking == 'serial' and
                 move.state in ('partially_available', 'assigned', 'confirmed') and
                 move.picking_type_id.use_create_lots and
-                not move.picking_type_id.use_existing_lots and
                 not move.picking_type_id.show_reserved
             )
 
@@ -107,15 +106,24 @@ class StockMove(models.Model):
                 str(initial_number + i).zfill(padding),
                 suffix
             )
-            move_lines_commands.append((0, 0, {
-                'lot_name': lot_name,
+            vals = {
                 'qty_done': 1,
                 'product_id': self.product_id.id,
                 'product_uom_id': self.product_id.uom_id.id,
                 'location_id': self.location_id.id,
                 'location_dest_id': location_dest.id,
                 'picking_id': self.picking_id.id,
-            }))
+            }
+            if self.picking_id.picking_type_id.use_existing_lots:
+                lot_id = self.env['stock.production.lot'].create({
+                    'name': lot_name,
+                    'product_id': self.product_id.id
+                })
+                vals['lot_id'] = lot_id.id
+            else:
+                vals['lot_name'] = lot_name
+
+            move_lines_commands.append((0, 0, vals))
         self.write({'move_line_ids': move_lines_commands})
         return True
 

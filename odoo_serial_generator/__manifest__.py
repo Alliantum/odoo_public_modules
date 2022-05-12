@@ -4,7 +4,7 @@
     'summary': """Automatic generation of Serial Numbers on transfers""",
     'author': "Alliantum",
     'website': "https://www.alliantum.com",
-    'version': '12.0.1.0.0',
+    'version': '12.0.1.0.1',
     'license': 'LGPL-3',
     'category': 'Warehouse',
     'depends': ['stock'],
