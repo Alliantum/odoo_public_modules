@@ -1,0 +1,78 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoo_invoice_addresses
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-14 12:19+0000\n"
+"PO-Revision-Date: 2021-04-14 12:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_invoice__partner_shipping_id
+msgid "Delivery Address"
+msgstr "Dirección de entrega"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,help:odoo_invoice_addresses.field_account_invoice__partner_shipping_id
+msgid "Delivery address for current invoice."
+msgstr "Dirección de entrega de la factura actual."
+
+#. module: odoo_invoice_addresses
+#: model:ir.model,name:odoo_invoice_addresses.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_invoice__partner_invoice_id
+msgid "Invoice Address"
+msgstr "Dirección de factura"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model,name:odoo_invoice_addresses.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Linea de Factura"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model,name:odoo_invoice_addresses.model_sale_order
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: odoo_invoice_addresses
+#: code:addons/odoo_invoice_addresses/models/account_invoice.py:51
+#, python-format
+msgid "Setting Address as a Customer"
+msgstr "Establecer la dirección como cliente"
+
+#. module: odoo_invoice_addresses
+#: code:addons/odoo_invoice_addresses/models/account_invoice.py:88
+#, python-format
+msgid "Warning!"
+msgstr "¡Atención!"
+
+#. module: odoo_invoice_addresses
+#: code:addons/odoo_invoice_addresses/models/account_invoice.py:52
+#, python-format
+msgid "Warning. It seems like you're trying to use an Address as the main Customer of this Invoice.\n"
+"If you didn't do it intentionally, please consider change the value of the Customer field."
+msgstr "Advertencia. Parece que está intentando utilizar una dirección como cliente principal de esta factura.\n"
+"Si no lo hizo intencionalmente, por favor considere cambiar el valor del campo Cliente."
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,help:odoo_invoice_addresses.field_account_invoice__partner_invoice_id
+msgid "You can find a contact by its Name, TIN, Email or Internal Reference."
+msgstr "Se puede encontrar un contacto por su nombre, cédula, correo electrónico o referencia interna. "
+
+#. module: odoo_invoice_addresses
+#: code:addons/odoo_invoice_addresses/models/account_invoice.py:89
+#, python-format
+msgid "You must first select a partner."
+msgstr "En primer lugar, debes elegir un compañero."
+
