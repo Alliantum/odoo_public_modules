@@ -1,0 +1,89 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoo_no_fractions
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-14 11:05+0000\n"
+"PO-Revision-Date: 2021-04-14 11:05+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_no_fractions
+#: model:ir.model.fields,field_description:odoo_no_fractions.field_uom_category__avoid_sell_fractions
+msgid "Avoid Sell Fractions"
+msgstr "Evite vender fracciones"
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/account_line.py:19
+#: code:addons/odoo_no_fractions/models/sale_order_line.py:18
+#, python-format
+msgid "Invalid Product Quantity"
+msgstr "Cantidad de producto no válida"
+
+#. module: odoo_no_fractions
+#: model:ir.model,name:odoo_no_fractions.model_account_move_line
+msgid "Invoice Line"
+msgstr "Linea de Factura"
+
+#. module: odoo_no_fractions
+#: model:ir.model,name:odoo_no_fractions.model_uom_category
+msgid "Product UoM Categories"
+msgstr "Categoria de productos UdM"
+
+#. module: odoo_no_fractions
+#: model:ir.model,name:odoo_no_fractions.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/sale_order_line.py:19
+#: code:addons/odoo_no_fractions/models/sale_order_line.py:36
+#: code:addons/odoo_no_fractions/models/sale_order_line.py:62
+#: code:addons/odoo_no_fractions/models/sale_order_line.py:72
+#, python-format
+msgid "Your're trying to sell {} {} of the product {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Qty."
+msgstr "Estás tratando de vender {} {} del producto {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad de pedido no decimal."
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/account_line.py:63
+#: code:addons/odoo_no_fractions/models/account_line.py:73
+#, python-format
+msgid "Your're trying to sell {} {} of the product {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Quantity."
+msgstr "Estás tratando de vender {} {} del producto {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad de pedido no decimal."
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/account_line.py:20
+#: code:addons/odoo_no_fractions/models/account_line.py:37
+#, python-format
+msgid "Your're trying to sell {} {} of the product {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Quantity."
+msgstr "Estás tratando de vender {} {} del producto {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad no decimal."
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/sale_order_line.py:54
+#, python-format
+msgid "Your're trying to sell {} {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Qty."
+msgstr "Estás tratando de vender {} {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad de pedido no decimal."
+
+#. module: odoo_no_fractions
+#: code:addons/odoo_no_fractions/models/account_line.py:55
+#, python-format
+msgid "Your're trying to sell {} {}.\n"
+" However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Quantity."
+msgstr "Estás tratando de vender {} {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad de pedido no decimal."
+
