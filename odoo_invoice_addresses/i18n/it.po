@@ -1,0 +1,108 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_invoice_addresses
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-31 11:45+0000\n"
+"PO-Revision-Date: 2022-03-31 12:51+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_bank_statement_line__partner_shipping_id
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_move__partner_shipping_id
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_payment__partner_shipping_id
+msgid "Delivery Address"
+msgstr "Indirizzo di consegna"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,help:odoo_invoice_addresses.field_account_bank_statement_line__partner_shipping_id
+#: model:ir.model.fields,help:odoo_invoice_addresses.field_account_move__partner_shipping_id
+#: model:ir.model.fields,help:odoo_invoice_addresses.field_account_payment__partner_shipping_id
+msgid "Delivery address for current invoice."
+msgstr "Indirizzo di consegna per la fattura corrente."
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_move__display_name
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_move__id
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_move_line__id
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_sale_order__id
+msgid "ID"
+msgstr ""
+
+#. module: odoo_invoice_addresses
+#: model:ir.model,name:odoo_invoice_addresses.model_account_invoice
+msgid "Invoice"
+msgstr "Fattura"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_bank_statement_line__partner_invoice_id
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_move__partner_invoice_id
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_payment__partner_invoice_id
+msgid "Invoice Address"
+msgstr "Indirizzo fattura"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model,name:odoo_invoice_addresses.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Linea fattura"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model,name:odoo_invoice_addresses.model_account_move
+msgid "Journal Entry"
+msgstr "Voce del diario"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model,name:odoo_invoice_addresses.model_account_move_line
+msgid "Journal Item"
+msgstr "Movimento contabile"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_move____last_update
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:odoo_invoice_addresses.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: odoo_invoice_addresses
+#: model:ir.model,name:odoo_invoice_addresses.model_sale_order
+msgid "Sales Order"
+msgstr "Ordine di vendita"
+
+#. module: odoo_invoice_addresses
+#: code:addons/odoo_invoice_addresses/models/account_invoice.py:0
+#, python-format
+msgid "Setting Address as a Customer"
+msgstr "Impostare l'indirizzo come cliente"
+
+#. module: odoo_invoice_addresses
+#: code:addons/odoo_invoice_addresses/models/account_invoice.py:0
+#, python-format
+msgid ""
+"Warning. It seems like you're trying to use an Address as the main Customer of this Invoice.\n"
+"If you didn't do it intentionally, please consider change the value of the Customer field."
+msgstr ""
+"Attenzione. Sembra che tu stia cercando di usare un indirizzo come cliente principale di questa fattura.\n"
+"Se non l'hai fatto intenzionalmente, considera di cambiare il valore del campo Cliente."
+
+#. module: odoo_invoice_addresses
+#: model:ir.model.fields,help:odoo_invoice_addresses.field_account_bank_statement_line__partner_invoice_id
+#: model:ir.model.fields,help:odoo_invoice_addresses.field_account_move__partner_invoice_id
+#: model:ir.model.fields,help:odoo_invoice_addresses.field_account_payment__partner_invoice_id
+msgid "You can find a contact by its Name, TIN, Email or Internal Reference."
+msgstr "Puoi trovare un contatto con il suo nome, TIN, e-mail o riferimento interno."
