@@ -8,7 +8,7 @@
     'author': "Alliantum",
     'website': "https://www.alliantum.com",
     'license': 'AGPL-3',
-    'version': '12.0.1.0.0',
+    'version': '12.0.1.0.1',
     'category': 'Technical',
     'depends': ['base_setup'],
     'data': [
