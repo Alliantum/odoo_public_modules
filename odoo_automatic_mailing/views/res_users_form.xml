@@ -1,0 +1,31 @@
+<odoo>
+    
+    <!-- Adding new field 'Enable Mail receivable' to User form view -->
+    <record id="view_os_automatic_mailing_users_extension" model="ir.ui.view">
+        <field name="name">automatic.mailing.users.extension</field>
+        <field name="model">res.users</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='messaging']" position="inside">
+                <group>
+                    <field name="os_enable_email_receivable" readonly="0"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Adding the same field to set preferences wizard view -->
+    <record id="view_os_automatic_mailing_users_preferences" model="ir.ui.view">
+        <field name="name">view_os_automatic_mailing_users_preferences</field>
+        <field name="model">res.users</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+        <field name="arch" type="xml">
+            <field name="email" position="after">
+                <field name="os_enable_email_receivable" readonly="0"/>
+            </field>
+        </field>
+    </record>
+    
+</odoo>

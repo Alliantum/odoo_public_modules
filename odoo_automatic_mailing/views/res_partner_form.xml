@@ -1,0 +1,28 @@
+<odoo>
+
+  <!-- Adding new field 'Invoice Channel' on partner form view-->
+    <record id="view_os_automatic_mailing_partner_extension" model="ir.ui.view">
+            <field name="name">automatic.mailing.partner.extension</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="priority">4</field>
+            <field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='accounting']/group" position="before">
+                    <group>
+                        <group>
+                            <field name="os_invoice_send_option" />
+                        </group>
+                    </group>
+                </xpath>
+                <xpath expr="//page[@name='accounting_disabled']/div" position="before">
+                    <group>
+                        <group>
+                            <field name="os_invoice_send_option" />
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+    </record>
+    
+</odoo>

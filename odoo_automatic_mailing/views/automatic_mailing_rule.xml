@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="automatic_mail_line_view_form" model="ir.ui.view">
+        <field name="name">automatic.mail.line.view.form</field>
+        <field name="model">automatic.mailing.rule</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="model_name" invisible="True" />
+                            <field name="model_id" />
+                        </group>
+                        <group>
+                            <field name="template_id" domain="[('model_id', '=', model_id)]"/>
+                        </group>
+                    </group>
+                    <h5>Filtering</h5>
+                    <span class="text-muted mb-3">Keep empty to not apply any filter</span>
+                    <field name="filter_model_id" widget="domain" options="{'model': 'model_name'}" nolabel="1"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

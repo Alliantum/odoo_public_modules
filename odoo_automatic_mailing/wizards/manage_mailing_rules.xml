@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="manage_mail_rules_view_form" model="ir.ui.view">
+        <field name="name">manage.mail.rules.view.form</field>
+        <field name="model">manage.mailing.rules</field>
+        <field name="arch" type="xml">
+            <form string="Manage Automatic Mailing">
+                <p>
+                    Add or remove here the rules to decide when and which template to use for the automatic mailing.
+                </p>
+                <field name="company_id" invisible="True" />
+                <field name="automatic_mailing_rule_ids" >
+                    <tree>
+                        <field name="sequence" widget="handle" />
+                        <field name="model_id"/>
+                        <field name="filter_model_id" readonly="True" string="When"/>
+                        <field name="template_id" />
+                    </tree>
+                </field>
+            </form>
+        </field>
+    </record>
+
+</odoo>
