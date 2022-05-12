@@ -77,7 +77,6 @@ jobs:
           commit_user_name: ${{ github.repository_owner }}
           commit_user_email: info@${{ github.repository_owner }}.com
           tagging_message: ${{ steps.compare-odoo-version.outputs.new-version }}
-          create_branch: true
 
       - name: Create release
         uses: softprops/action-gh-release@v1
