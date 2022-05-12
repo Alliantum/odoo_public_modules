@@ -1,0 +1,76 @@
+name: Release public modules
+
+permissions:
+  contents: write
+
+on:
+  push:
+
+jobs:
+  copy-public-modules:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        module: ["odoo_automatic_mailing"]
+        branch: ["12.0", "14.0"]
+
+    env:
+      MODULE_NAME: ${{ matrix.module }}
+      MODULE_PATH: "${{ github.workspace}}/${{ matrix.module}}"
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+
+      - name: Switch to the correct branch
+        run: git -C ${{ github.workspace }} checkout ${{ matrix.branch }}
+
+      - name: Remove ${{ matrix.module }}
+        run: rm -rfv "${{ env.MODULE_PATH }}"
+        shell: bash
+
+      - name: Clone ${{ matrix.module }}
+        run: |
+          LATEST_RELEASE=$(curl -sH "Accept: application/vnd.github.v3+json" "${{ github.api_url }}/repos/Alliantum/${{ env.MODULE_NAME }}/releases" | jq -e 'map(.tag_name) | sort | [.[]|match("^.*v${{ matrix.branch }}.*")] | map(.string) | .[-1]') || exit 1
+          git clone ${{ github.server_url }}/Alliantum/${{ matrix.module }} --depth=1 --branch=$(echo $LATEST_RELEASE | tr -d \") ${{ env.MODULE_PATH }}
+        shell: bash
+
+      - name: Remove ${{ matrix.module }}'s git directory
+        run: rm -rfv "${{ env.MODULE_PATH }}/.git"
+        shell: bash
+
+      - name: Compare current version with latest release
+        id: compare-odoo-version
+        uses: Alliantum/actions/compare-odoo-version@develop
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        if: ${{ steps.compare-odoo-version.outputs.new-version }}
+        with:
+          commit_message: Release ${{ steps.compare-odoo-version.outputs.new-version }}
+          branch: ${{ matrix.branch }}
+          repository: ${{ github.workspace }}
+          commit_user_name: ${{ github.repository_owner }}
+          commit_user_email: info@${{ github.repository_owner }}.com
+          tagging_message: ${{ steps.compare-odoo-version.outputs.new-version }}
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        if: ${{ steps.compare-odoo-version.outputs.new-version }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          name: ${{ steps.compare-odoo-version.outputs.new-version }}
+          tag_name: ${{ steps.compare-odoo-version.outputs.new-version }}
+          draft: false
+          prerelease: false
+          target_commitish: ${{ github.sha }}
