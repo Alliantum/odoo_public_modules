@@ -9,12 +9,26 @@ on:
 jobs:
   copy-public-modules:
     runs-on: ubuntu-latest
+
     strategy:
       max-parallel: 1
       fail-fast: false
+
       matrix:
-        module: ["odoo_automatic_mailing"]
-        branch: ["12.0", "14.0"]
+        module:
+          [
+            "odoo_automatic_mailing",
+            "odoo_clean_barcode",
+            "odoo_extended_barcodes",
+            "odoo_insert_line_position",
+            "odoo_invoice_addresses",
+            "odoo_mail_attachments",
+            "odoo_multiple_product_images",
+            "odoo_no_fractions",
+            "odoo_private_product",
+            "odoo_serial_generator",
+          ]
+        branch: ["12.0", "13.0", "14.0"]
 
     env:
       MODULE_NAME: ${{ matrix.module }}
