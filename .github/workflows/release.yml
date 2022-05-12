@@ -53,8 +53,8 @@ jobs:
 
       - name: Clone ${{ matrix.module }}
         run: |
-          LATEST_RELEASE=$(curl -sH "Accept: application/vnd.github.v3+json" "${{ github.api_url }}/repos/Alliantum/${{ env.MODULE_NAME }}/releases" | jq -e 'map(.tag_name) | sort | [.[]|match("^.*v${{ matrix.branch }}.*")] | map(.string) | .[-1]') || exit 1
-          git clone ${{ github.server_url }}/Alliantum/${{ matrix.module }} --depth=1 --branch=$(echo $LATEST_RELEASE | tr -d \") ${{ env.MODULE_PATH }}
+          LATEST_RELEASE=$(curl -sH "Accept: application/vnd.github.v3+json" "${{ github.api_url }}/repos/${{ github.repository_owner }}/${{ env.MODULE_NAME }}/releases" | jq -e 'map(.tag_name) | sort | [.[]|match("^.*v${{ matrix.branch }}.*")] | map(.string) | .[-1]') || exit 1
+          git clone ${{ github.server_url }}/${{ github.repository_owner }}/${{ matrix.module }} --depth=1 --branch=$(echo $LATEST_RELEASE | tr -d \") ${{ env.MODULE_PATH }}
         shell: bash
 
       - name: Remove ${{ matrix.module }}'s git directory
