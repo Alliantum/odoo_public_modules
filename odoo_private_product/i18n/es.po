@@ -1,0 +1,130 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoo_private_products
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-14 07:29+0000\n"
+"PO-Revision-Date: 2021-04-14 07:29+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_private_products
+#: code:addons/odoo_private_products/models/account_invoice.py:18
+#: code:addons/odoo_private_products/models/sale_order.py:19
+#, python-format
+msgid " and {} more"
+msgstr " y {} más"
+
+#. module: odoo_private_products
+#: model:ir.model.fields,field_description:odoo_private_products.field_res_partner__brand_partner
+#: model:ir.model.fields,field_description:odoo_private_products.field_res_users__brand_partner
+msgid "Brand Partner"
+msgstr "Socio de la marca"
+
+#. module: odoo_private_products
+#: model:ir.model.fields,field_description:odoo_private_products.field_product_product__brand_partner_status
+#: model:ir.model.fields,field_description:odoo_private_products.field_product_template__brand_partner_status
+msgid "Brand Partner Status"
+msgstr "Estatus de socio de marca"
+
+#. module: odoo_private_products
+#: model:ir.model,name:odoo_private_products.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: odoo_private_products
+#: model:ir.model.fields,field_description:odoo_private_products.field_product_product__restricted_partner_ids
+#: model:ir.model.fields,field_description:odoo_private_products.field_product_template__restricted_partner_ids
+msgid "Customers"
+msgstr "Clientes"
+
+#. module: odoo_private_products
+#: model_terms:ir.ui.view,arch_db:odoo_private_products.private_product_template_form_view
+msgid "Customers Limited"
+msgstr "Clientes"
+
+#. module: odoo_private_products
+#: model:ir.model.fields,help:odoo_private_products.field_product_product__restricted_partner_ids
+#: model:ir.model.fields,help:odoo_private_products.field_product_template__restricted_partner_ids
+msgid "If some contacts are attached to the current product, then this could be just be sold to those customers"
+msgstr "Si algunos contactos están vinculados al producto actual, entonces éste podría venderse sólo a esos clientes"
+
+#. module: odoo_private_products
+#: model:ir.model,name:odoo_private_products.model_account_move
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: odoo_private_products
+#: model:ir.model,name:odoo_private_products.model_account_move_line
+msgid "Invoice Line"
+msgstr "Linea de Factura"
+
+#. module: odoo_private_products
+#: selection:product.template,brand_partner_status:0
+msgid "Limited"
+msgstr "Limitado"
+
+#. module: odoo_private_products
+#: model:ir.model.fields,field_description:odoo_private_products.field_res_partner__restricted_product_ids
+#: model:ir.model.fields,field_description:odoo_private_products.field_res_users__restricted_product_ids
+msgid "Private Products"
+msgstr "Productos Privados"
+
+#. module: odoo_private_products
+#: model:ir.model,name:odoo_private_products.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: odoo_private_products
+#: model:ir.model,name:odoo_private_products.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: odoo_private_products
+#: selection:product.template,brand_partner_status:0
+msgid "Restricted"
+msgstr "Restringido"
+
+#. module: odoo_private_products
+#: model:ir.model,name:odoo_private_products.model_sale_order
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: odoo_private_products
+#: model:ir.model,name:odoo_private_products.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: odoo_private_products
+#: code:addons/odoo_private_products/models/sale_order.py:37
+#, python-format
+msgid "Warning!"
+msgstr "¡Atención!"
+
+#. module: odoo_private_products
+#: code:addons/odoo_private_products/models/sale_order.py:38
+#, python-format
+msgid "You must first select a partner."
+msgstr "En primer lugar, debes elegir un compañero."
+
+#. module: odoo_private_products
+#: code:addons/odoo_private_products/models/account_invoice.py:19
+#: code:addons/odoo_private_products/models/sale_order.py:20
+#, python-format
+msgid "{} is a private product, and can just be sold to {}{}"
+msgstr "{} es un producto privado, y sólo puede ser vendido a {}{}"
+
+#. module: odoo_private_products
+#: code:addons/odoo_private_products/models/account_invoice.py:35
+#: code:addons/odoo_private_products/models/sale_order.py:42
+#, python-format
+msgid "{} is a private product, and can't be sold to {}"
+msgstr "{} es un producto privado, y no puede ser vendido a {}"
+
