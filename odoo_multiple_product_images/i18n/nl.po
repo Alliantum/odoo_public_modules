@@ -1,0 +1,311 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_multiple_product_images
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-31 16:00+0000\n"
+"PO-Revision-Date: 2022-03-31 17:06+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
+msgid "<span class=\"o_stat_text\">Images</span>"
+msgstr "<span class=\"o_stat_text\">Afbeeldingen</span>"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
+msgid "<span class=\"o_stat_text\">Templates</span>"
+msgstr "<span class=\"o_stat_text\">Sjablonen</span>"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
+msgid "<span class=\"o_stat_text\">Variants</span>"
+msgstr "<span class=\"o_stat_text\">Varianten</span>"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model,name:odoo_multiple_product_images.model_product_image_category
+msgid "An image category"
+msgstr "Een beeld categorie"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__category_ids
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_image_backend_form_view
+msgid "Categories"
+msgstr "Categorieën"
+
+#. module: odoo_multiple_product_images
+#: model:ir.actions.server,name:odoo_multiple_product_images.clean_orphans_images_cron_ir_actions_server
+#: model:ir.cron,cron_name:odoo_multiple_product_images.clean_orphans_images_cron
+#: model:ir.cron,name:odoo_multiple_product_images.clean_orphans_images_cron
+msgid "Clean Orphan Images"
+msgstr "Verweesde afbeeldingen opschonen"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__color
+msgid "Color"
+msgstr "Kleur"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__create_uid
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__create_date
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__description
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__display_name
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__display_name
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__display_name
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template__display_name
+msgid "Display Name"
+msgstr "Weergavenaam"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__filename
+msgid "Filename"
+msgstr "Bestandsnaam"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__id
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__id
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__id
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__image
+msgid "Image"
+msgstr "Afbeelding"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_image_backend_form_view
+msgid "Image Name"
+msgstr "Naam afbeelding"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__images_ids
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__product_image_backend_ids
+#: model:ir.ui.menu,name:odoo_multiple_product_images.menu_images_config
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_template_image_backend_form_view
+msgid "Images"
+msgstr "Afbeeldingen"
+
+#. module: odoo_multiple_product_images
+#: model:ir.actions.act_window,name:odoo_multiple_product_images.product_backend_images_categories
+#: model:ir.ui.menu,name:odoo_multiple_product_images.menu_images
+msgid "Images Categories"
+msgstr "Afbeeldingen Categorieën"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__images_counter
+msgid "Images Count"
+msgstr "Afbeeldingen tellen"
+
+#. module: odoo_multiple_product_images
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:0
+#, python-format
+msgid "Images by Category"
+msgstr "Afbeeldingen per categorie"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend____last_update
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category____last_update
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product____last_update
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__write_uid
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__write_date
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__image_medium
+msgid "Medium-sized image"
+msgstr "Middelgrote afbeelding"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,help:odoo_multiple_product_images.field_product_image_backend__image_medium
+msgid ""
+"Medium-sized image of the product. It is automatically resized as a "
+"128x128px image, with aspect ratio preserved, only when the image exceeds "
+"one of those sizes. Use this field in form views or some kanban views."
+msgstr ""
+"Middelgrote afbeelding van het product. de afbeelding wordt automatisch "
+"verkleint naar 128x128px, met behoud van de verhoudingen. Gebruik dit veld "
+"in formuleren of kanban weergaven."
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__name
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__name
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
+msgid "Name"
+msgstr "Naam"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__origin_id
+msgid "Origin"
+msgstr "Bron"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model,name:odoo_multiple_product_images.model_product_product
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_kanban_view
+msgid "Product"
+msgstr "Product"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model,name:odoo_multiple_product_images.model_product_image_backend
+msgid "Product Image Backend"
+msgstr "Product Afbeelding Achterkant"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_template_image_backend_form_view
+msgid "Product Images"
+msgstr "Afbeeldingen product"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_form
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_tree
+msgid "Product Images Category"
+msgstr "Product Afbeeldingen Categorie"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model,name:odoo_multiple_product_images.model_product_template
+msgid "Product Template"
+msgstr "Productsjabloon"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_tree
+msgid "Product Templates"
+msgstr "Product sjablonen"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_tree
+msgid "Product Variants"
+msgstr "Productvarianten"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__products_counter
+msgid "Products Count"
+msgstr "Producten Tellen"
+
+#. module: odoo_multiple_product_images
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:0
+#, python-format
+msgid "Products by Category"
+msgstr "Producten per categorie"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__raw_image_size
+msgid "Raw Image Size"
+msgstr "Grootte onbewerkt beeld"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__product_id
+msgid "Related Product"
+msgstr "Gekoppeld product"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__template_id
+msgid "Related Template"
+msgstr "Verwante sjablonen"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_image_backend_form_view
+msgid "Set for Template"
+msgstr "Set voor sjabloon"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.full_product_image_backend_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_image_backend_form_view
+msgid "Set for Variant"
+msgstr "Set voor Variant"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__image_small
+msgid "Small-sized image"
+msgstr "Kleine afbeelding"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,help:odoo_multiple_product_images.field_product_image_backend__image_small
+msgid ""
+"Small-sized image of the product. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image "
+"is required."
+msgstr ""
+"Kleine afbeelding van het product. de afbeelding wordt automatisch "
+"verkleint naar 64x64px, met behoud van de verhoudingen. Gebruik dit veld, "
+"waar een kleine afbeelding benodigd is."
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_category__products_tmpl_counter
+msgid "Template Count"
+msgstr "Sjabloon Telling"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__template_image_backend_ids
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_template__template_image_backend_ids
+msgid "Template Image Backend"
+msgstr "Sjabloon afbeelding Achterkant"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_product__related_template_image_backend_ids
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
+msgid "Template Images"
+msgstr "Sjabloon Afbeeldingen"
+
+#. module: odoo_multiple_product_images
+#: code:addons/odoo_multiple_product_images/models/product_image_backend.py:0
+#, python-format
+msgid "This category name is already in use."
+msgstr "Deze categorienaam is al in gebruik."
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_cat_image_backend_tree
+msgid "Total Images"
+msgstr "Totaal aantal beelden"
+
+#. module: odoo_multiple_product_images
+#: model:ir.model.fields,field_description:odoo_multiple_product_images.field_product_image_backend__trigger
+msgid "Trigger"
+msgstr "Activeer"
+
+#. module: odoo_multiple_product_images
+#: model_terms:ir.ui.view,arch_db:odoo_multiple_product_images.product_product_image_backend_form_view
+msgid "Variant Images"
+msgstr "Variante afbeeldingen"
