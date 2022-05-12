@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="manage_mail_attachemnt_view_form" model="ir.ui.view">
+        <field name="name">manage.mail.attachments.view.form</field>
+        <field name="model">manage.mail.attachments</field>
+        <field name="arch" type="xml">
+            <form string="Manage Dynamic Mail Attachments">
+                <p>
+                    Add or remove here the attachemnt you want to have included in your mails.
+                </p>
+                <field name="company_id" invisible="True" />
+                <field name="mail_attachment_line_ids" >
+                    <tree default_order="model_id">
+                        <field name="model_id" string="Trigger On"/>
+                        <field name="model_name" invisible="True"/>
+                        <field name="filter_model_id" readonly="True" string="When"/>
+                        <field name="static_attachments_count" />
+                        <field name="report_id" string="Use Report"/>
+                        <field name="report_model_name" invisible="True"/>
+                        <field name="filter_report_id" readonly="True" string="When Report Records"/>
+                        <field name="related_path" />
+                    </tree>
+                </field>
+            </form>
+        </field>
+    </record>
+
+</odoo>
