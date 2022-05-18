@@ -16,6 +16,7 @@ jobs:
       fail-fast: false
 
       matrix:
+        branch: ["12.0", "13.0", "14.0"]
         module:
           [
             "odoo_automatic_mailing",
@@ -29,7 +30,6 @@ jobs:
             "odoo_private_product",
             "odoo_serial_generator",
           ]
-        branch: ["12.0", "13.0", "14.0"]
 
     env:
       MODULE_NAME: ${{ matrix.module }}
