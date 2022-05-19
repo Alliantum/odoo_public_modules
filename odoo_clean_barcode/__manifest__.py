@@ -13,7 +13,7 @@
     'website': "https://www.alliantum.com/",
     'category': 'Uncategorized',
     'license': 'AGPL-3',
-    'version': '14.0.1.0.1',
+    'version': '14.0.1.0.2',
     'depends': [
         'base'
     ],
