@@ -11,7 +11,7 @@
     'website': "https://www.alliantum.com/",
     'category': 'Technical',
     'license': 'AGPL-3',
-    'version': '12.0.1.0.1',
+    'version': '12.0.1.0.2',
     'depends': [
         'base'
     ],
