@@ -5,7 +5,8 @@ permissions:
 
 on:
   push:
-    - branches: [ "actions" ]
+    branches:
+      - actions
 
 jobs:
   copy-public-modules:
