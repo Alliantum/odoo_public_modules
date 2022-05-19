@@ -1,7 +1,12 @@
 name: Release
 
+permissions:
+  contents: write
+
 on:
   push:
+    branches:
+      - "13.0"
 
 jobs:
   release:
