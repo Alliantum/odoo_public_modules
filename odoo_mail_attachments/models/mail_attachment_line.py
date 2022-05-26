@@ -8,10 +8,10 @@ from odoo.tools.safe_eval import safe_eval
 
 class MailAttachmentLine(models.Model):
     _name = 'mail.attachment.line'
-    _description = 'Mail Attachemnt Line'
+    _description = 'Mail Attachment Line'
 
     company_id = fields.Many2one('res.company', required=True, ondelete="cascade")
-    model_id = fields.Many2one('ir.model', string='Trigger Model', required=True, ondelete="cascade", help="Model used by the email template. This will decide whether to use or not then current attachemnt line.")
+    model_id = fields.Many2one('ir.model', string='Trigger Model', required=True, ondelete="cascade", help="Model used by the email template. This will decide whether to use or not then current attachment line.")
     model_name = fields.Char(related="model_id.model")
     filter_model_id = fields.Char(string="Trigger Model Filtering", help="Extended filtering option to trigger the line, for the Model.")
     use_existing_by_language = fields.Boolean('Existing Attachments by Language')
@@ -19,7 +19,7 @@ class MailAttachmentLine(models.Model):
     existing_attachment_ids = fields.Many2many(comodel_name='ir.attachment', relation="attach_line_ir_attachment_relation", column1="line_id", column2="attachment_id", string="Existing Attachments", domain="[('mimetype', 'not in', ['application/javascript', 'text/css', 'text/calendar'])]")
     attachment_ids = fields.Many2many('ir.attachment', string="Attachments")
     static_attachments_count = fields.Integer(compute="_compute_static_attachments_count", string="Static Attachments")
-    report_id = fields.Many2one('ir.actions.report', string="Report", ondelete="cascade", help="The report that will be used to generate the attachemnt.")
+    report_id = fields.Many2one('ir.actions.report', string="Report", ondelete="cascade", help="The report that will be used to generate the attachment.")
     report_model_name = fields.Char(related="report_id.model_id.model")
     filter_report_id = fields.Char(string="Report Model Filtering")
     related_path = fields.Char('Path to Report Model',
@@ -52,7 +52,7 @@ class MailAttachmentLine(models.Model):
 
     @api.model
     def recursive_get_report_record_id(self, records, attr, remaining_path):
-        # records can be one or many records of the same model, so, this is simiar to an api.multi for loop
+        # records can be one or many records of the same model, so, this is similar to an api.multi for loop
         report_record_ids = None
         for record in records:
             if hasattr(record, attr):
@@ -86,8 +86,15 @@ class MailAttachmentLine(models.Model):
                 attachment_ids += (line.existing_attachment_ids + line.attachment_ids)
                 if line.use_existing_by_language:
                     for attachment_lang_line in line.existing_attachment_by_language_lines:
-                        if hasattr(record_id, attachment_lang_line.ref_field) and getattr(record_id, attachment_lang_line.ref_field).lang_id == attachment_lang_line.lang_id:
-                            attachment_ids += attachment_lang_line.attachment_id
+                        if hasattr(record_id, attachment_lang_line.ref_field):
+                            record_lang_code = None
+                            if hasattr(getattr(record_id, attachment_lang_line.ref_field), 'lang'):
+                                record_lang_code = getattr(record_id, attachment_lang_line.ref_field).lang
+                            elif hasattr(getattr(record_id, attachment_lang_line.ref_field), 'lang_id'):
+                                record_lang_code = getattr(record_id, attachment_lang_line.ref_field).lang_id.code
+                            # if we were able to detect a language field in the ref_field and we have an attachment configured for it
+                            if record_lang_code and record_lang_code == attachment_lang_line.lang:
+                                attachment_ids += attachment_lang_line.attachment_id
                 if line.report_id and line.related_path:
                     pdf, report_record_ids = None, None
                     if line.related_path:

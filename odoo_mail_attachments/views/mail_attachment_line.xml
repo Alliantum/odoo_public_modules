@@ -43,7 +43,7 @@
                         <group />
                     </group>
                     <p attrs="{'invisible': [('use_existing_by_language', '=', False)]}" >
-                        When using this option, the language will be inferred from the <b>Trigger Model</b> when it contains the given <b>Reference Field</b> (most commonly will probably be <code>res_partner</code>) pointing to a <code>res.partner</code> related field.
+                        When using this option, the language will be inferred from the <b>Trigger Model</b> when it contains the given <b>Reference Field</b> (most commonly will probably be <code>partner_id</code>) pointing to a <code>res.partner</code> related field.
                     </p>
                     <field name="existing_attachment_by_language_lines" attrs="{'invisible': [('use_existing_by_language', '=', False)]}" nolabel="1" >
                         <tree editable="top">
@@ -51,7 +51,7 @@
                             <field name="attachment_line_id" invisible="True" />
                             <field name="attachment_id" />
                             <field name="ref_field" />
-                            <field name="lang_id" />
+                            <field name="lang" />
                         </tree>
                     </field>
                 </sheet>
