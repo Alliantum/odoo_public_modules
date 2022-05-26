@@ -5,7 +5,7 @@
     """,
     'author': "Alliantum",
     'website': "https://www.alliantum.com",
-    'version': '14.0.0.0.1',
+    'version': '14.0.0.0.2',
     'license': 'AGPL-3',
     'category': 'Warehouse',
     'depends': ['uom', 'sale', 'account'],
