@@ -1,0 +1,42 @@
+name: Release
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - "12.0"
+      - "13.0"
+      - "14.0"
+
+jobs:
+  release:
+    name: Create release from manifest version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+
+      - name: Compare current version with latest release
+        id: compare-odoo-version
+        uses: Alliantum/actions/compare-odoo-version@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        if: ${{ steps.compare-odoo-version.outputs.new-version }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          name: ${{ steps.compare-odoo-version.outputs.new-version }}
+          tag_name: ${{ steps.compare-odoo-version.outputs.new-version }}
+          draft: false
+          prerelease: false
+          target_commitish: ${{ github.sha }}
