@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Add a `Warnings` section to the configuration of the sales app -->
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.odoo_order_conf</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="11" />
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@data-key='sale_management']" position="inside">
+                <div id="odoo_order_confirmation_settings_section">
+                    <h2>Warnings</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="percentage_warning" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="percentage_warning" />
+                                <div class="text-muted">
+                                    Enable the warning on sale's order with big quantities of products involved.<br /> Decide the maximum allowed percentage before the warning is raised and the sale order required confirmation from stock managers.
+                                </div>
+                                <div class="content-group" attrs="{'invisible': [('percentage_warning','=',False)]}">
+                                    <div class="mt16">
+                                        <label for="kg_onsale_warning" />
+                                        <field style="width: 4rem;" class="text-right" name="kg_onsale_warning" />
+                                        <br />
+                                        <label for="units_onsale_warning" />
+                                        <field style="width: 4rem;" class="text-right" name="units_onsale_warning" />
+                                        <br />
+                                        <label string="Notify and create activity for: " for="stock_warning_notify" />
+                                        <field name="stock_warning_notify" class="text-right" nolabel="1" widget="many2many_tags" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

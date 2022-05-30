@@ -1,0 +1,135 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoo_order_confirmation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-14 10:32+0000\n"
+"PO-Revision-Date: 2021-04-14 10:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_order_confirmation
+#: model:ir.model,name:odoo_order_confirmation.model_mail_activity
+msgid "Activity"
+msgstr "Aktivität"
+
+#. module: odoo_order_confirmation
+#: model_terms:ir.ui.view,arch_db:odoo_order_confirmation.stock_warning_view_order_form
+msgid "Approve Order"
+msgstr "Bestellung genehmigen"
+
+#. module: odoo_order_confirmation
+#: model:ir.model.fields,field_description:odoo_order_confirmation.field_sale_order_line__blocking
+msgid "Blocking"
+msgstr "Blockieren"
+
+#. module: odoo_order_confirmation
+#: model:ir.model,name:odoo_order_confirmation.model_res_company
+msgid "Companies"
+msgstr "Unternehmen"
+
+#. module: odoo_order_confirmation
+#: model:ir.model,name:odoo_order_confirmation.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfiguration "
+
+#. module: odoo_order_confirmation
+#: model_terms:ir.ui.view,arch_db:odoo_order_confirmation.stock_warning_view_order_form
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#. module: odoo_order_confirmation
+#: model_terms:ir.ui.view,arch_db:odoo_order_confirmation.res_config_settings_view_form
+msgid "Enable the warning on sale's order with big quantities of products involved.<br/> Decide the maximum allowed percentage before the warning is raised and the sale order required confirmation from stock managers."
+msgstr "Aktivieren Sie die Warnung bei Verkaufsbestellungen mit großen Produktmengen.<br/> Legen Sie den maximal zulässigen Prozentsatz fest, bevor die Warnung ausgelöst und die Verkaufsbestellung von den Lagerverwaltern bestätigt werden muss."
+
+#. module: odoo_order_confirmation
+#: model:ir.model.fields,field_description:odoo_order_confirmation.field_res_config_settings__kg_onsale_warning
+msgid "Limit Kg"
+msgstr "Grenze Kg"
+
+#. module: odoo_order_confirmation
+#: model:ir.model.fields,field_description:odoo_order_confirmation.field_res_config_settings__units_onsale_warning
+msgid "Limit Units"
+msgstr "Grenzwerteinheiten"
+
+#. module: odoo_order_confirmation
+#: code:addons/odoo_order_confirmation/models/sale_order.py:135
+#, python-format
+msgid "Limit on SO quantities surpassed!"
+msgstr "Limit für SO-Mengen überschritten!"
+
+#. module: odoo_order_confirmation
+#: model:ir.model.fields,field_description:odoo_order_confirmation.field_res_company__stock_warning_notify
+msgid "Notify Stock Managers Warn"
+msgstr "Lagerverwalter benachrichtigen warnen"
+
+#. module: odoo_order_confirmation
+#: model_terms:ir.ui.view,arch_db:odoo_order_confirmation.res_config_settings_view_form
+msgid "Notify and create activity for:"
+msgstr "Benachrichtigen und Aktivität erstellen für:"
+
+#. module: odoo_order_confirmation
+#: model:ir.model,name:odoo_order_confirmation.model_sale_order
+msgid "Sale Order"
+msgstr "Verkaufsauftrag"
+
+#. module: odoo_order_confirmation
+#: model:ir.model,name:odoo_order_confirmation.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Auftragsposition"
+
+#. module: odoo_order_confirmation
+#: code:addons/odoo_order_confirmation/models/sale_order.py:129
+#, python-format
+msgid "Selling {} {} of {} exceeds the limit for this product, which is set to {} {}.\n"
+"\n"
+"If you save or confirm this sale order with the present amounts, it will remain blocked until one of the stock managers will confirm it."
+msgstr "Der Verkauf von {} {} von {} überschreitet den Grenzwert für dieses Produkt, der auf {} festgelegt ist {}.\n"
+"\n"
+"Wenn Sie diesen Verkaufsauftrag mit den aktuellen Beträgen speichern oder bestätigen, bleibt er gesperrt, bis einer der Lagerverwalter ihn bestätigt."
+
+#. module: odoo_order_confirmation
+#: model:res.groups,name:odoo_order_confirmation.group_sale_stock_approval
+msgid "Stock Approval"
+msgstr "Lagerfreigabe"
+
+#. module: odoo_order_confirmation
+#: model:ir.model.fields,field_description:odoo_order_confirmation.field_sale_order__was_stock_approved
+msgid "Stock Approved"
+msgstr "Lager genehmigt"
+
+#. module: odoo_order_confirmation
+#: code:addons/odoo_order_confirmation/models/sale_order.py:21
+#: model:ir.model.fields,field_description:odoo_order_confirmation.field_mail_activity__is_stock_confirmation
+#, python-format
+msgid "Stock Confirmation"
+msgstr "Lagerbestätigung"
+
+#. module: odoo_order_confirmation
+#: model:ir.model.fields,field_description:odoo_order_confirmation.field_res_config_settings__stock_warning_notify
+msgid "Users to notify"
+msgstr "Benutzer zu benachrichtigen"
+
+#. module: odoo_order_confirmation
+#: model:ir.model.fields,field_description:odoo_order_confirmation.field_res_config_settings__percentage_warning
+msgid "Warning Percent on Sale"
+msgstr "Warnung Prozent zum Verkauf"
+
+#. module: odoo_order_confirmation
+#: model_terms:ir.ui.view,arch_db:odoo_order_confirmation.res_config_settings_view_form
+msgid "Warnings"
+msgstr "Warnungen"
+
+#. module: odoo_order_confirmation
+#: model:res.groups,comment:odoo_order_confirmation.group_sale_stock_approval
+msgid "the user will have read access to all data in the sales application."
+msgstr "Der Benutzer hat Lesezugriff auf alle Daten in der Verkaufsanwendung."
+
