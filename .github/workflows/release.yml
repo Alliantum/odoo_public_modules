@@ -26,8 +26,11 @@ jobs:
             "odoo_insert_line_position",
             "odoo_invoice_addresses",
             "odoo_mail_attachments",
+            "odoo_mo_maximum",
             "odoo_multiple_product_images",
             "odoo_no_fractions",
+            "odoo_order_confirmation",
+            "odoo_order_warning",
             "odoo_private_product",
             "odoo_serial_generator",
           ]
