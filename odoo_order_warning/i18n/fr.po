@@ -1,0 +1,54 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoo_order_warning
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-14 09:57+0000\n"
+"PO-Revision-Date: 2021-04-14 09:57+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_order_warning
+#: model_terms:ir.ui.view,arch_db:odoo_order_warning.order_warning_state_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: odoo_order_warning
+#: model_terms:ir.ui.view,arch_db:odoo_order_warning.order_warning_counter_view
+msgid "Check Warning State"
+msgstr "Vérifier l'état d'alerte"
+
+#. module: odoo_order_warning
+#: model_terms:ir.ui.view,arch_db:odoo_order_warning.order_warning_counter_view
+msgid "Delivery"
+msgstr "Livraison"
+
+#. module: odoo_order_warning
+#: code:addons/odoo_order_warning/models/sale.py:30
+#, python-format
+msgid "It wasn't possible to remove the warning state.There're still some quantities missing in the Deliveries:"
+msgstr "Il n'a pas été possible de supprimer l'état d'alerte et il manque encore des quantités dans les livraisons :"
+
+#. module: odoo_order_warning
+#: model:ir.model,name:odoo_order_warning.model_sale_order
+msgid "Sale Order"
+msgstr "Bon de commande"
+
+#. module: odoo_order_warning
+#: model:ir.model,name:odoo_order_warning.model_stock_picking
+msgid "Transfer"
+msgstr "Transfert"
+
+#. module: odoo_order_warning
+#: code:addons/odoo_order_warning/models/sale.py:20
+#, python-format
+msgid "Warning"
+msgstr "Avertissement"
+
