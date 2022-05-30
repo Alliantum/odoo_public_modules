@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    
-    <!-- This record is needed as this is going to be used on any record in the chatter and they need to be properly typed -->
-    <record id="mt_automatic_mailing" model="mail.message.subtype">
-        <field name="name">Automatic Mailing</field>
-        <field name="default" eval="False"/>
-        <field name="sequence" eval="90"/>
-        <field name="internal" eval="False"/>
-        <field name="hidden" eval="False"/>
-        <field name="description">Used by Automatic Mailing.</field>
-    </record>
-
+    <data noupdate="1">
+        <!-- This record is needed as this is going to be used on any record in the chatter and they need to be properly typed -->
+        <record id="mt_automatic_mailing" model="mail.message.subtype">
+            <field name="name">Automatic Mailing</field>
+            <field name="default" eval="False"/>
+            <field name="sequence" eval="90"/>
+            <field name="internal" eval="False"/>
+            <field name="hidden" eval="False"/>
+            <field name="description">Automatically Sent.</field>
+        </record>
+    </data>
 </odoo>

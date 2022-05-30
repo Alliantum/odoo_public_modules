@@ -6,7 +6,7 @@
     'website': "https://www.alliantum.com",
     'category': 'Technical Settings',
     'license': 'AGPL-3',
-    'version': '14.0.1.0.2',
+    'version': '14.0.1.0.5',
     'depends': [
         'sale',
         'account',

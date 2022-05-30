@@ -31,8 +31,8 @@ msgstr ""
 
 #. module: odoo_automatic_mailing
 #: model:mail.template,subject:odoo_automatic_mailing.automatic_email_template_edi_invoice
-msgid "${object.company_id.name} Invoice (Ref ${object.number or 'n/a'})"
-msgstr "${object.company_id.name} Factuur (Ref ${object.number or 'n/b'})"
+msgid "${object.company_id.name} Invoice (Ref ${object.name or 'n/a'})"
+msgstr "${object.company_id.name} Factuur (Ref ${object.name or 'n/b'})"
 
 #. module: odoo_automatic_mailing
 #: model:mail.template,body_html:odoo_automatic_mailing.automatic_email_template_edi_invoice
@@ -250,10 +250,10 @@ msgstr "Factuur kanaal"
 #. module: odoo_automatic_mailing
 #: model:mail.template,report_name:odoo_automatic_mailing.automatic_email_template_edi_invoice
 msgid ""
-"Invoice_${(object.number or '').replace('/','_')}${object.state == 'draft' "
+"Invoice_${(object.name or '').replace('/','_')}${object.state == 'draft' "
 "and '_draft' or ''}"
 msgstr ""
-"Factuur_${(object.number or '').replace('/','_')}${object.state == 'draft' "
+"Factuur_${(object.name or '').replace('/','_')}${object.state == 'draft' "
 "and '_draft' or ''}"
 
 #. module: odoo_automatic_mailing

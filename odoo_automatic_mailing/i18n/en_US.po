@@ -29,7 +29,7 @@ msgstr ""
 
 #. module: odoo_automatic_mailing
 #: model:mail.template,subject:odoo_automatic_mailing.automatic_email_template_edi_invoice
-msgid "${object.company_id.name} Invoice (Ref ${object.number or 'n/a'})"
+msgid "${object.company_id.name} Invoice (Ref ${object.name or 'n/a'})"
 msgstr ""
 
 #. module: odoo_automatic_mailing
@@ -208,7 +208,7 @@ msgstr ""
 #. module: odoo_automatic_mailing
 #: model:mail.template,report_name:odoo_automatic_mailing.automatic_email_template_edi_invoice
 msgid ""
-"Invoice_${(object.number or '').replace('/','_')}${object.state == 'draft' "
+"Invoice_${(object.name or '').replace('/','_')}${object.state == 'draft' "
 "and '_draft' or ''}"
 msgstr ""
 
@@ -321,7 +321,7 @@ msgstr ""
 
 #. module: odoo_automatic_mailing
 #: model:mail.message.subtype,description:odoo_automatic_mailing.mt_automatic_mailing
-msgid "Used by Automatic Mailing."
+msgid "Automatically Sent.."
 msgstr ""
 
 #. module: odoo_automatic_mailing
