@@ -1,0 +1,81 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoo_mo_maximum
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-19 12:19+0000\n"
+"PO-Revision-Date: 2021-04-19 12:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_mo_maximum
+#: code:addons/odoo_mo_maximum/models/change_production_qty.py:16
+#, python-format
+msgid "<p>This product has a limit on the quantities you can produce for a single MO. Maximum is {}, so be aware, that if you overpass this limit a new MO will be created with the exceeded amounts.</p>"
+msgstr "<p>Questo prodotto ha un limite sulle quantità che puoi produrre per un singolo MO. Il massimo è {}, quindi sappi che se superi questo limite verrà creato un nuovo MO con le quantità superate.</p>"
+
+#. module: odoo_mo_maximum
+#: model:ir.model.fields,field_description:odoo_mo_maximum.field_mrp_production__allow_exceed_max
+msgid "Allow Exceed Max"
+msgstr "Permettere di superare il massimo"
+
+#. module: odoo_mo_maximum
+#: code:addons/odoo_mo_maximum/models/mrp_production.py:40
+#, python-format
+msgid "Can't save this order. The amount for the MO ( {} {} ) exceeds the limit of {} per a single Manufacturing Order, which is {} {}."
+msgstr "Impossibile salvare questo ordine. L'importo per il MO ( {} {} ) supera il limite di {} per un singolo ordine di produzione, che è {} {}."
+
+#. module: odoo_mo_maximum
+#: model:ir.model,name:odoo_mo_maximum.model_change_production_qty
+msgid "Change Production Qty"
+msgstr "Cambia la quantità di produzione"
+
+#. module: odoo_mo_maximum
+#: model_terms:ir.ui.view,arch_db:odoo_mo_maximum.odoo_mo_maximum_template_form
+msgid "Manufacturing"
+msgstr "Produzione"
+
+#. module: odoo_mo_maximum
+#: model:ir.model.fields,help:odoo_mo_maximum.field_product_product__max_production
+#: model:ir.model.fields,help:odoo_mo_maximum.field_product_template__max_production
+msgid "Maximum amount allowed for a single MO for this product, calculated with the default UoM of the product."
+msgstr "Importo massimo consentito per un singolo MO per questo prodotto, calcolato con l'UoM predefinito del prodotto."
+
+#. module: odoo_mo_maximum
+#: model:ir.model.fields,field_description:odoo_mo_maximum.field_product_product__max_production
+#: model:ir.model.fields,field_description:odoo_mo_maximum.field_product_template__max_production
+msgid "Maximum per MO"
+msgstr "Massimo per MO"
+
+#. module: odoo_mo_maximum
+#: model:ir.model.fields,field_description:odoo_mo_maximum.field_mrp_production__max_allowed_reached
+msgid "Max Reached"
+msgstr "Massimo raggiunto"
+
+#. module: odoo_mo_maximum
+#: model:ir.model,name:odoo_mo_maximum.model_product_product
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: odoo_mo_maximum
+#: model:ir.model,name:odoo_mo_maximum.model_product_template
+msgid "Product Template"
+msgstr "Modello prodotto"
+
+#. module: odoo_mo_maximum
+#: model:ir.model,name:odoo_mo_maximum.model_mrp_production
+msgid "Production Order"
+msgstr "Ordine di produzione"
+
+#. module: odoo_mo_maximum
+#: model:ir.model.fields,field_description:odoo_mo_maximum.field_change_production_qty__warning_message
+msgid "Warning Message"
+msgstr "Messaggio di avvertimento"
+

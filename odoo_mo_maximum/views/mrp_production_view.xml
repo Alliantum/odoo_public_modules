@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Adding max_production field and allow_exceed_max on Manufacturing Order -->
+    <record id="mrp_production_max_form_view" model="ir.ui.view">
+        <field name="name">mrp.production.max.form</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view" />
+        <field name="arch" type="xml">
+            <field name="is_locked" position="after">
+                <field name="max_allowed_reached" invisible="True" />
+            </field>
+            <field name="bom_id" position="before">
+                <field name="allow_exceed_max"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

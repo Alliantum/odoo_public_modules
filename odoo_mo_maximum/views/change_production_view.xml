@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Adding the warning message on the wizard that appears when
+         trying to update quantities to produce -->
+    <record id="max_change_production_qty_wizard" model="ir.ui.view">
+        <field name="name">max_change.production.qty.wizard</field>
+        <field name="model">change.production.qty</field>
+        <field name="inherit_id" ref="mrp.view_change_production_qty_wizard" />
+        <field name="arch" type="xml">
+            <field name="product_qty" position="after">
+                <field colspan="2" name="warning_message" string=" " style="font-size: 0.9rem; color: #dca500 !important"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
