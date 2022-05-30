@@ -1,0 +1,61 @@
+<odoo>
+  <data>
+
+        <!-- Only show the cancel button when the order is in certain states -->
+        <record id="order_warning_state_view" model="ir.ui.view">
+            <field name="name">order.warning.state.view</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_cancel']" position="replace">
+                    <button name="action_cancel" states="draft,sent,sale,warning" type="object" string="Cancel"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Set the `decoration-warning` attribute depending on the state of the order -->
+        <record id="order_warning_state_tree" model="ir.ui.view">
+            <field name="name">order.warning.state.tree</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_quotation_tree"/>
+            <field name="arch" type="xml">
+                <tree position="attributes">
+                    <attribute name="decoration-warning">state == 'warning'</attribute>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Add a button for `action_remove_warning` and a widget for the `delivery_count` -->
+        <record id="order_warning_counter_view" model="ir.ui.view">
+            <field name="name">order.warning.counter.view</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale_stock.view_order_form_inherit_sale_stock"/>
+            <field name="arch" type="xml">
+                <field name ="state" position="before">
+                    <button name="action_remove_warning"
+                            states="warning"
+                            string="Check Warning State"
+                            type="object"/>
+                </field>
+                <xpath expr="//button[@name='action_view_delivery']" position="replace">
+                    <button type="object"
+                            name="action_view_delivery"
+                            class="oe_stat_button"
+                            icon="fa-truck"
+                            attrs="{'invisible': ['|', ('delivery_count', '=', 0), ('state', '=', 'warning')]}" groups="base.group_user">
+                            <field name="delivery_count" widget="statinfo" string="Delivery"/>
+                    </button>
+                    <button type="object"
+                            name="action_view_delivery"
+                            class="oe_stat_button"
+                            style="background-color: #ffc107;"
+                            icon="fa-truck"
+                            attrs="{'invisible': ['|', ('delivery_count', '=', 0), ('state', '!=', 'warning')]}" groups="base.group_user">
+                            <field name="delivery_count" widget="statinfo" string="Delivery"/>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+
+  </data>
+</odoo>
