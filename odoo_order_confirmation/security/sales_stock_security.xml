@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Add `group_sale_stock_approval` to the user permissions settings -->
+    <record id="group_sale_stock_approval" model="res.groups">
+        <field name="name">Stock Approval</field>
+        <field name="category_id" />
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+        <field name="comment">the user will have read access to all data in the sales application.</field>
+        <field name="menu_access" eval="[(5, False, False)]" />
+    </record>
+
+    <!-- Add `group_sale_stock_approval` to groups -->
+    <record id="sales_team.group_sale_salesman" model="res.groups">
+        <field name="implied_ids" eval="[(3, ref('group_sale_stock_approval'))]" />
+    </record>
+
+</odoo>
